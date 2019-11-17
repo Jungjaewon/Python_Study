@@ -56,6 +56,9 @@ def casting_example():
         print("x is str")
 
 def ascii_code_example():
+    """
+    ord('a') returns unicode point as an integer
+    """
     print("-" * 5 + "ascii_code_example" + "-" * 5)
     print("ord('a') : ", ord('a')) # return ascii code
     print("ord('b') : ", ord('b')) # return ascii code
@@ -77,6 +80,11 @@ def bytearray_example():
     print("bytearray(3) : ", bytearray(3))
     print("bytearray([1,2,3,4,5]) : ", bytearray([1,2,3,4,5]))
     print("bytearray(b'Hello bytearray') : ", bytearray(b"Hello bytearray"))
+    x = bytearray(b'abcde')
+    print("x = bytearray(b'abcde')")
+    x[0] = ord('b')
+    print("x[0] = ord('b')")
+    print("x[0] : ",x[0])
 
 
 def encoding_decoding_example():
