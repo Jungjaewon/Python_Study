@@ -1,5 +1,5 @@
 import urllib.request
-
+# Ref 1 : https://bigfood.tistory.com/161
 if __name__ == '__main__':
     print('-' * 5 + 'urllib.request example' + '-' * 5)
     a = urllib.request.urlopen("http://www.google.com/")
